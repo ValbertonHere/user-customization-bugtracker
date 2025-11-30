@@ -1,0 +1,48 @@
+name: Баг или недоработка
+description: Форма оформления бага или недоработки.
+title: "[БАГ]: "
+labels: ["bug"]
+projects: ["user-customization"]
+assignees:
+  - ValbertonHere
+body:
+  - type: markdown
+    attributes:
+      value: |
+        В заголовке укажите краткую суть проблемы.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло?
+      description: Опишите суть проблемы максимально подробно
+      placeholder: | 
+        Пример: Я нажал эту кнопку и всё сломалось!
+
+        Обязательно прикрепляйте логи (python.log из корня игры) и прочие файлы. 
+        Это можно сделать через иконку "скрепки" снизу формы.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Что именно вы сделали, что воспроизвести проблему? Каждый шаг должен быть выделен в отдельный пункт.
+      placeholder: |
+        1. Зайти в окно Агрегатора;
+        2. Выбрать такой-то стиль.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Ожидаемый и фактический результаты
+      description: |
+        Что вы ожидали увидеть и что вы увидели?
+      placeholder: |
+        Ожидаемый результат: Стиль применяется.
+        Результат: Игра вылетает.
+      value: | 
+        Ожидаемый результат: 
+        Результат: 
+    validations:
+      required: true

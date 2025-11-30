@@ -1,0 +1,24 @@
+name: Предложение
+description: Форма предложения функции для мода.
+title: "[ПРЕДЛОЖЕНИЕ]: "
+labels: ["suggestion"]
+projects: ["user-customization"]
+assignees:
+  - ValbertonHere
+body:
+  - type: markdown
+    attributes:
+      value: |
+        В заголовке укажите краткую суть предлагаемой функции мода.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Что хотите предложить?
+      description: Опишите суть того, что хотите предложить для внедрения в мод.
+      placeholder: | 
+        Пример: Хочу предложить передвинуть эту кнопку!
+
+        По желанию можете приложить визуальное объяснение предлагаемой фичи.
+        Это можно сделать через иконку "скрепки" снизу формы.
+    validations:
+      required: true
